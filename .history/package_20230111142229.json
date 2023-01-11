@@ -12,7 +12,7 @@
         "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
     },
     "repository": {
-        "url": "https://github.com/LeeZ-2017/vfullscreen.git"
+        "url": ""
     },
     "dependencies": {
         "screenfull": "^5.2.0",

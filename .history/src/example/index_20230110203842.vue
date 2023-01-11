@@ -1,5 +1,5 @@
 <template>
-  <v-fullscreen>
+  <v-fullscreen :isFullScreen="isFullScreen">
     <v-head :height="77" slot="header">
       <upper :height="77"/>
     </v-head>
@@ -41,7 +41,7 @@ export default {
   props: {},
   data() {
     return {
-
+      isFullScreen: false
     }
   },
   watch: {},
