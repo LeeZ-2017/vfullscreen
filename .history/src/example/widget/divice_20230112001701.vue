@@ -1,6 +1,6 @@
 <template>
-  <v-chart :height="height" :width="width" name="event" class="eventWrapper" @popChart="handleChart">
-    <div style="color:#fff">{{chart}}event</div>
+  <v-chart :height="height" :width="width" name="divice" class="diviceWrapper" @popChart="handleChart">
+    divice{{chart}}
   </v-chart>
 </template>
 <script>
@@ -26,17 +26,17 @@ export default {
   },
   methods: {
     handleChart(obj) {
-      // console.log('handleChart----event', obj)
       this.chart = obj
     }
   }
 }
 </script>
 <style scoped>
-.eventWrapper{
-  width: 100%;
-  background:rgba(4, 29, 69, .6);
+.diviceWrapper{
   font-size: 20px;
+  width: 100px;
+  height: 300px;
+  background:rgba(4, 29, 69)
 }
 
 </style>

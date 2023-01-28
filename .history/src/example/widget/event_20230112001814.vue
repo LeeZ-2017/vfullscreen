@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     handleChart(obj) {
-      // console.log('handleChart----event', obj)
+      console.log('handleChart', handleChart)
       this.chart = obj
     }
   }

@@ -106,9 +106,11 @@ export default {
             this.broadcast('v-row', 'setRow', this.component)
           } else if (item.name.indexOf('_v-col') > 0) {
             this.broadcast('v-col', 'setCol', this.component)
+          } else {
+            this.broadcast('v-chart', 'setChart', this.component)
           }
         })
-        this.broadcast('v-chart', 'setChart', this.component)
+
       })
     },
     toFullScreen(bool) {

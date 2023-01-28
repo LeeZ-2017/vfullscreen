@@ -1,5 +1,5 @@
 <template>
-  <v-chart :height="height" :width="width" name="event" class="eventWrapper" @popChart="handleChart">
+  <v-chart :height="height" :width="width" name="event" class="eventWrapper" @popChart="val => chart = val">
     <div style="color:#fff">{{chart}}event</div>
   </v-chart>
 </template>
@@ -24,12 +24,6 @@ export default {
       default: 0
     }
   },
-  methods: {
-    handleChart(obj) {
-      // console.log('handleChart----event', obj)
-      this.chart = obj
-    }
-  }
 }
 </script>
 <style scoped>

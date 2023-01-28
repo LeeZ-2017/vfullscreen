@@ -29,8 +29,7 @@ export default {
   data() {
     return {
       modelH: 0,
-      modelW: 0,
-      emited: []
+      modelW: 0
     }
   },
   watch: {},
@@ -52,11 +51,7 @@ export default {
         // console.log('setChart', obj, this.hashName)
         this.modelH = obj[`${this.hashName}H`]
         this.modelW = obj[`${this.hashName}W`]
-        if (!this.emited.includes[this.hashName]) {
-          // console.log('emited', this.emited)
-          this.$emit('popChart', {'height': this.modelH, 'width': this.modelW})
-          this.emited.push(this.hashName)
-        }
+        this.$emit('popChart', {'height': this.modelH, 'width': this.modelW})
       })
     },
 

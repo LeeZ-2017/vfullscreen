@@ -4,7 +4,7 @@ var webpack = require('webpack')
 module.exports = {
     entry: process.env.NODE_ENV === 'production' ? './src/index.js' : './src/main.js',
     output: {
-        path: path.resolve(__dirname, '../../电信/w2fe-plugin/dist/'),
+        path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
         filename: 'index.js',
         library: 'vue-cropper',

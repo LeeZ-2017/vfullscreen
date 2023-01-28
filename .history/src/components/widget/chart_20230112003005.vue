@@ -49,11 +49,10 @@ export default {
         this.$emit('popChart', {'height': this.modelH, 'width': this.modelW})
       })
       this.$on('setChart', obj => {
-        // console.log('setChart', obj, this.hashName)
+        console.log('setChart', obj, this.hashName)
         this.modelH = obj[`${this.hashName}H`]
         this.modelW = obj[`${this.hashName}W`]
         if (!this.emited.includes[this.hashName]) {
-          // console.log('emited', this.emited)
           this.$emit('popChart', {'height': this.modelH, 'width': this.modelW})
           this.emited.push(this.hashName)
         }
